@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpiceGarden Bistro — Modern Indian Dining</title>
+  <meta name="description" content="SpiceGarden Bistro — Modern Indian dining with authentic flavors, cozy ambiance, and fast reservations via WhatsApp." />
+
+  <!-- Tailwind (required by project constraints; site uses mostly custom CSS) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="siteHeader">
+    <div class="container">
+      <div class="nav" aria-label="Primary">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>SpiceGarden Bistro</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#why">Why us</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+          <a href="#tech">Tech stack</a>
+        </nav>
+
+        <button id="menuBtn" class="menu-btn" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a href="#tech">Tech stack</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow"><span class="dot" aria-hidden="true"></span> Authentic Flavors in the Heart of the City</div>
+            <h1>Experience the Art of Modern Indian Dining at SpiceGarden Bistro</h1>
+            <p>Fresh ingredients, slow-cooked recipes, and a cozy ambiance perfect for friends, family, and late‑night cravings.</p>
+
+            <div class="cta-row" role="group" aria-label="Primary actions">
+              <a class="btn btn-primary" href="#contact">Reserve Your Table</a>
+              <a class="btn btn-outline" href="#services">View Our Signature Dishes</a>
+            </div>
+
+            <p class="micro" style="color: rgba(255,255,255,.78); margin-top: 12px;">Tip: Tap “Reserve” to jump to WhatsApp/email instantly.</p>
+          </div>
+
+          <aside class="specials" aria-label="Today’s specials">
+            <h3>Today’s Specials</h3>
+            <ul>
+              <li><strong>Smoked Tandoori Platter</strong> — char-kissed, juicy bites</li>
+              <li><strong>Creamy Paneer Lababdar</strong> — rich, slow-simmered gravy</li>
+              <li><strong>Masala Lime Mocktail</strong> — citrusy, chilled, refreshing</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">What We Serve</span>
+          <h2>Crafted For Every Craving</h2>
+          <p>From weekday lunches to weekend celebrations, SpiceGarden Bistro has a table waiting for you.</p>
+        </div>
+
+        <div class="grid cols-2 cols-3" style="grid-template-columns: 1fr;">
+          <article class="card">
+            <div class="card-top">
+              <div class="icon" aria-hidden="true">🍽️</div>
+              <h3>Dine‑In Experience</h3>
+            </div>
+            <p>Warm lighting, soft music, and handcrafted interiors for relaxed meals.</p>
+            <ul>
+              <li>Cozy seating for couples and groups</li>
+              <li>Private corners for small celebrations</li>
+              <li>Friendly, attentive staff</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="icon" aria-hidden="true">🛵</div>
+              <h3>Takeaway &amp; Delivery</h3>
+            </div>
+            <p>Your favorites, packed fresh and delivered fast.</p>
+            <ul>
+              <li>Neatly packed, spill-safe containers</li>
+              <li>Ideal for office lunches and house parties</li>
+              <li>Easy ordering via call or WhatsApp</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="icon" aria-hidden="true">🎉</div>
+              <h3>Catering &amp; Events</h3>
+            </div>
+            <p>From intimate gatherings to grand celebrations.</p>
+            <ul>
+              <li>Customizable menus for all budgets</li>
+              <li>On-site service staff available</li>
+              <li>Perfect for birthdays, anniversaries, and corporate meets</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Why us</span>
+          <h2>Why Guests Love SpiceGarden</h2>
+          <p>Traditional recipes, modern plating, and a calm space that feels like your go‑to spot.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="panel">
+            <h3>Made to feel special—every time</h3>
+            <p>SpiceGarden Bistro blends traditional Indian recipes with modern plating, ensuring every visit feels special.</p>
+            <ul>
+              <li>Chef‑curated menu with seasonal specials.</li>
+              <li>Locally sourced ingredients wherever possible.</li>
+              <li>Fair pricing with generous portions.</li>
+              <li>Located near major landmarks with easy parking.</li>
+            </ul>
+          </div>
+
+          <div class="feature-list" aria-label="Key features">
+            <div class="feature">
+              <div class="badge" aria-hidden="true">C</div>
+              <div>
+                <h4>Consistency You Can Taste</h4>
+                <p>Your favorite dish will taste just as good every single time.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="badge" aria-hidden="true">H</div>
+              <div>
+                <h4>Hygiene First</h4>
+                <p>Strict kitchen hygiene and regular quality checks.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="badge" aria-hidden="true">F</div>
+              <div>
+                <h4>Family‑Friendly</h4>
+                <p>High chairs, kid‑friendly options, and calm seating zones.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="badge" aria-hidden="true">L</div>
+              <div>
+                <h4>Late‑Night Service</h4>
+                <p>Open till 11:30 PM on weekends for late dinners with friends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Testimonials</span>
+          <h2>Guests Are Talking About Us</h2>
+          <p>Here’s what our regulars and first‑timers say after dining at SpiceGarden Bistro.</p>
+        </div>
+
+        <div class="grid cols-2 cols-3" style="grid-template-columns: 1fr;">
+          <article class="card">
+            <div class="verified"><span class="tick" aria-hidden="true">✓</span> Verified review</div>
+            <div class="quote">“The flavors are incredible, and the staff remembered our preferences on the second visit. Easily our go‑to spot for family dinners.”</div>
+            <div class="reviewer">
+              <div>
+                <div class="who">Priya Malhotra</div>
+                <div class="meta">Local guide · Visited with family</div>
+              </div>
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="quote">“Loved the balance of spices. The paneer dishes were soft and rich without being too heavy. Highly recommend their signature thali.”</div>
+            <div class="reviewer">
+              <div>
+                <div class="who">Rahul S.</div>
+                <div class="meta">Food blogger</div>
+              </div>
+              <div class="stars" aria-label="4.5 out of 5 stars">★★★★☆ <span style="color: rgba(15,26,18,.55); font-weight: 800;">4.5/5</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="quote">“Cozy ambiance, quick service, and great vegetarian options. Perfect place to unwind after work with colleagues.”</div>
+            <div class="reviewer">
+              <div>
+                <div class="who">Aditi Verma</div>
+                <div class="meta">Works nearby · Regular guest</div>
+              </div>
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Contact</span>
+          <h2>Reserve a Table or Say Hello</h2>
+          <p>Fast replies and zero hassle—message us and we’ll confirm your reservation.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="panel details">
+            <h3>Let’s plan your next meal</h3>
+            <p>Planning a dinner, small celebration, or office lunch? Reach out and the SpiceGarden team will confirm your reservation or help you plan your menu.</p>
+            <ul>
+              <li><strong>Location:</strong> Near City Center, opposite Green Park.</li>
+              <li><strong>Timings:</strong> 12:00 PM – 11:00 PM (All days).</li>
+              <li><strong>Phone:</strong> +91 98765 43210</li>
+            </ul>
+            <div class="map" role="img" aria-label="Map placeholder">Map coming soon · Find us on Google Maps</div>
+          </div>
+
+          <div class="panel">
+            <h3>Contact options</h3>
+            <p class="micro" style="margin-top: 0;">Choose WhatsApp for the fastest confirmation.</p>
+
+            <div class="contact-actions" role="group" aria-label="Contact buttons">
+              <a class="btn btn-whatsapp" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                <span aria-hidden="true" style="display:inline-flex; width: 22px; height: 22px; border-radius: 7px; background: rgba(255,255,255,.18); align-items:center; justify-content:center; font-weight: 900;">W</span>
+                Chat on WhatsApp
+              </a>
+              <a class="btn btn-email" href="mailto:hello@spicegardenbistro.com">
+                <span aria-hidden="true" style="display:inline-flex; width: 22px; height: 22px; border-radius: 7px; background: rgba(32,70,42,.10); align-items:center; justify-content:center; font-weight: 900;">@</span>
+                Send Us an Email
+              </a>
+            </div>
+
+            <div class="micro">Response time: usually within 15–20 minutes during working hours.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section id="tech" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Tech Stack</span>
+          <h2>What’s Under the Hood</h2>
+          <p>The SpiceGarden Bistro site is built to be fast, lightweight, and mobile‑first.</p>
+        </div>
+
+        <div class="stack">
+          <div class="stack-item">
+            <span class="pill">HTML</span>
+            <div>
+              <h4>Semantic &amp; accessible structure</h4>
+              <p>Clear headings, sectioning, and link targets for better SEO and screen readers.</p>
+            </div>
+          </div>
+          <div class="stack-item">
+            <span class="pill">CSS</span>
+            <div>
+              <h4>Flexbox + CSS Grid</h4>
+              <p>Responsive layout for phones, tablets, and desktops—no heavy frameworks required.</p>
+            </div>
+          </div>
+          <div class="stack-item">
+            <span class="pill">JS</span>
+            <div>
+              <h4>Minimal interactions only</h4>
+              <p>Mobile navigation toggle and small UX polish—kept intentionally simple.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div>© <span id="year"></span> SpiceGarden Bistro. All rights reserved.</div>
+        <div>Built mobile‑first with semantic HTML, modern CSS, and minimal JavaScript.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const header = document.getElementById('siteHeader');
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      // Year
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+
+      function setMenu(open){
+        mobileMenu.classList.toggle('open', open);
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+
+      menuBtn.addEventListener('click', () => {
+        const open = mobileMenu.classList.contains('open');
+        setMenu(!open);
+      });
+
+      // Close menu when a link is clicked
+      mobileMenu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => setMenu(false));
+      });
+
+      // Close on outside click
+      document.addEventListener('click', (e) => {
+        const isClickInside = mobileMenu.contains(e.target) || menuBtn.contains(e.target);
+        if (!isClickInside) setMenu(false);
+      });
+
+      // Close on escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setMenu(false);
+      });
+
+      // Auto-close menu when moving to desktop
+      window.addEventListener('resize', () => {
+        if (window.matchMedia('(min-width: 1024px)').matches) setMenu(false);
+      });
+
+      // Header on scroll
+      const onScroll = () => {
+        header.classList.toggle('scrolled', window.scrollY > 6);
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, {passive:true});
+    })();
+  </script>
+</body>
+</html>

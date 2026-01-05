@@ -1,5 +1,7 @@
 # SpiceGarden Bistro – Responsive Restaurant Landing Page
 
+Link: https://its-aarav-codes.github.io/SpiceGarden-Bistro-restaurant/
+
 ## Overview
 SpiceGarden Bistro is a **fully responsive, single-page restaurant website** designed to work smoothly across mobile, tablet, and desktop screens.  
 The focus is on **clear layout, fast loading, and real-world usability**, without relying on heavy animations or external frameworks.
